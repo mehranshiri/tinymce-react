@@ -180,7 +180,8 @@ export class Editor extends React.Component<IAllProps> {
     } else {
       const channel = this.props.cloudChannel;
       const apiKey = this.props.apiKey ? this.props.apiKey : 'no-api-key';
-      return `https://cdn.tiny.cloud/1/${apiKey}/tinymce/${channel}/tinymce.min.js`;
+      // return `https://cdn.tiny.cloud/1/${apiKey}/tinymce/${channel}/tinymce.min.js`;
+      return `/src/assets/js/tinymce-${channel}.min.js`;
     }
   }
 
